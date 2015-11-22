@@ -1,0 +1,4 @@
+add_lunch_combo photon_angler-userdebug
+add_lunch_combo photon_bullhead-userdebug
+add_lunch_combo photon_hammerhead-userdebug
+add_lunch_combo photon_shamu-userdebug
