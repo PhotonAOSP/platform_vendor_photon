@@ -8,16 +8,22 @@ PRODUCT_PACKAGES += \
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
+    
+# DSP Manager
+PRODUCT_PACKAGES += \
+    audio_effects.conf \
+    DSPManager \
+    libcyanogen-dsp \
 
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/photon/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/photon/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 	
-#RRO Layers
+# RRO Layers
 PRODUCT_COPY_FILES +=  \
     vendor/photon/prebuilt/common/app/Layers.apk:system/app/Layers/Layers.apk
    
-#Lock Clock 
+# Lock Clock 
 PRODUCT_COPY_FILES +=  \
     vendor/photon/prebuilt/common/app/LockClock.apk:system/app/LockClock/LockClock.apk
