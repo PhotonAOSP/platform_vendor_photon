@@ -10,10 +10,12 @@ PRODUCT_PACKAGES += \
     Busybox
     
 # DSP Manager
+ifneq ($(filter photon_hammerhead photon_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     DSPManager \
     libcyanogen-dsp \
+endif
 
 # SuperSU
 PRODUCT_COPY_FILES += \
