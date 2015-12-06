@@ -7,3 +7,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	
 #Tags
 ROM_VERSION_TAG := ALPHA
+
+#OTA
+OTA_DATE := $(shell date -u +%Y%m%d)
+
+PHOTON_ROM_NAME := PhotonAOSP
+PHOTON_DEVICE_URL := null
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ota.romname=$(TARGET_DEVICE) \
+    ro.ota.version=$(OTA_DATE) \
+    ro.ota.device=$(TARGET_DEVICE) \
+    ro.ota.manifest= null
