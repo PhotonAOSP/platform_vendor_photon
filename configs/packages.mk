@@ -3,6 +3,7 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Apollo \
     MonthCalendarWidget \
+    Terminal
     Stk
 
 # Busybox
