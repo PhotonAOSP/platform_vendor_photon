@@ -1,7 +1,5 @@
 #PhotonAOSP version
-export PHOTON_VERSION := $(PLATFORM_VERSION)-$(ROM_VERSION_TAG)-$(shell date -u +%Y%m%d)-$(TARGET_DEVICE)
-
-ROM_VERSION_TAG := ALPHA
+export PHOTON_VERSION := $(PLATFORM_VERSION)-$(shell date -u +%Y%m%d)-ALPHA-$(TARGET_DEVICE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.photon.version=$(PHOTON_VERSION)
