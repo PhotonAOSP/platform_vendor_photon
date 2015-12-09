@@ -24,6 +24,7 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/photon/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/photon/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+	vendor/photon/prebuilt/common/app/SuperSU.apk:system/app/SuperSU/SuperSU.apk
 	
 # RRO Layers
 PRODUCT_COPY_FILES +=  \
