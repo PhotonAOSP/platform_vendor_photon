@@ -23,13 +23,10 @@ endif
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/photon/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/photon/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-	vendor/photon/prebuilt/common/app/SuperSU.apk:system/app/SuperSU/SuperSU.apk
+    vendor/photon/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/photon/prebuilt/common/app/SuperSU.apk:system/app/SuperSU/SuperSU.apk
 	
-# RRO Layers
+# Prebuilt apks
 PRODUCT_COPY_FILES +=  \
-    vendor/photon/prebuilt/common/app/Layers.apk:system/app/Layers/Layers.apk
-   
-# Lock Clock 
-PRODUCT_COPY_FILES +=  \
+    vendor/photon/prebuilt/common/app/Layers.apk:system/app/Layers/Layers.apk \
     vendor/photon/prebuilt/common/app/LockClock.apk:system/app/LockClock/LockClock.apk
