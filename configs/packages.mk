@@ -20,6 +20,13 @@ PRODUCT_PACKAGES += \
     
 endif
 
+#PhotonOTA
+ifneq ($(TARGET_BUILD_PHOTONOTA), true)
+PRODUCT_PACKAGES += \
+    PhotonOTA
+	
+endif
+
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/photon/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
