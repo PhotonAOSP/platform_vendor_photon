@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     Busybox
     
 # DSP Manager
-ifneq ($(filter photon_hammerhead photon_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter photon_hammerhead photon_mako photon_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     DSPManager \
