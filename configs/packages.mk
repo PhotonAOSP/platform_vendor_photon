@@ -11,13 +11,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox
     
-# DSP Manager
-ifneq ($(filter photon_hammerhead photon_mako photon_shamu,$(TARGET_PRODUCT)),)
+#DSPManager    
+ifneq ($(TARGET_NO_DSPMANAGER), true)
 PRODUCT_PACKAGES += \
     audio_effects.conf \
     DSPManager \
-    libcyanogen-dsp \
-    
+    libcyanogen-dsp
 endif
 
 #PhotonOTA
